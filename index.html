@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+    <link href="css/all.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet">
+</head>
+<body class="bg-dark">
+<!-- navbar -->
+   
+    <header>
+        <div class="leftMenu bg-dark p-3 d-flex align-content-between flex-wrap">
+          <div class="nav-item">
+              <ul>
+                <li class="item1">
+                    <a href="#" currentmoive = "now_playing">Now playing</a>
+                </li>
+                <li class="item2">
+                    <a href="#" currentmoive = "popular">Popular</a>
+                </li>
+                <li class="item3">
+                    <a href="#" currentmoive = "top_rated" >Top Rated</a>
+                </li>
+                <li class="item4">
+                    <a href="#" currentmoive = "upcoming">Upcoming</a>
+                </li>
+                <li class="item5">
+                    <a href="#" >News</a>
+                </li>
+                <li class="item6">
+                    <a href="#" >Contact Us</a>
+                </li>
+              </ul>
+          </div>
+          <div class="social-item mt-5 ml-4 ">
+             <a href="#" class="mr-3"><i class="fab fa-facebook-f"></i></a>
+             <a href="#" class="mr-3"><i class="fab fa-twitter"></i></a>
+             <a href="#" class="mr-3"><i class="fas fa-globe"></i></a>
+             <p class="text-white mt-4">Copyright Â© 2019 All Rights Reserved.</p>
+          </div>
+        </div>
+        <div class="rightMenu bg-white d-flex align-content-between justify-content-center flex-wrap p-2">
+           <img src="images/logo.png" class="">
+           <i id="triggle" class="open" aria-hidden="true"></i>
+           <div class="icons">
+               <i class="fa fa-share-alt" aria-hidden="true"></i>
+               <i class="fas fa-globe    "></i>
+           </div>
+        </div>
+    </header>  
+
+    <section class="movies p-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <input class="form-control bg-dark" id=searchByWord placeholder="Get Movies By Word....">
+                </div>
+                <div class="col-md-6">
+                    <input class="form-control bg-dark" id="search" placeholder="Search....">
+                </div>
+            </div>
+            <div class="row my-5" id="searchResult">
+          </div>
+            <hr>
+            <h2 class="text-center text-white">Current Movies</h2>
+            <hr>
+<div class="row my-5" id="movies-container">
+  </div>
+ </div>
+    </section>
+ <!-- contact us -->
+ <section id="contact" class="container movieEdit w-70 mx-auto my-5 ">  
+    <h2 class="text-light my-5">Contact Us:</h2>
+    <div class="row">
+    <div class="col-md-6">
+    <div class="form-group">
+    <input class="form-control" id="name" placeholder="Enter Your Name">
+    </div>
+</div>
+<div class="col-md-6">
+    <div class="form-group">
+        <input class="form-control" id="email" placeholder="Enter Email">
+    </div>
+</div>
+<div class="col-md-6">
+    <div class="form-group">
+    <input  class="form-control" id="phone" placeholder="Enter phone">
+    </div>
+</div>
+<div class="col-md-6">
+    <div class="form-group">
+    <input  class="form-control" id="age" placeholder="Enter Age">
+    </div>
+</div>
+<div class="col-md-6">
+    <div class="form-group">
+    <input  class="form-control" type="password"  id="password" placeholder="Enter Password">
+    </div>
+</div>
+<div class="col-md-6">
+    <div class="form-group">
+        <input  class="form-control" type="password"  id="rePassword" placeholder="Enter RePassword">
+    </div>
+</div>
+</div>  
+    <button type="submit" disabled id="submitBtn" class="btn btn-outline-danger">Submit</button>
+</section>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
